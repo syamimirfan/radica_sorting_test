@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Test</title>
+</head>
+<body>
+
+ <form action="" id="submit">
+    <!-- to make it not changeable we put readonly in userId input -->
+    <input type="number" name="userID" value="0" id="userId" readonly>
+    <input type="text" name="userName" placeholder="UserName" id="userName">
+    <input type="text" name="userOccupation" placeholder="userOccupation" id="userOccupation">
+    <button name="add" >Add</button>
+ </form>
+     <br>
+     
+     <label for="">Sort by:</label>
+     <select name="sortBy" id="sortBy">
+        <option value="userId">UserID</option>
+        <option value="userName">UserName</option>
+        <option value="userOccupation">userOccupation</option>
+     </select>
+
+     <br>
+     <br>
+
+     <table border="1" id="user-table">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+     </table>
+</body>
+    <script src="../scripts/scripts.js"></script>
+</html>
