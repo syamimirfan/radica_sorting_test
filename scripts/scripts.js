@@ -7,6 +7,7 @@ const sortSelect = document.getElementById("sortBy");
 
 //when user click add button with arrow function
 form.addEventListener("submit", (e) => {   
+    //make the defaul action that belongs to the event will not occur
     e.preventDefault();
     
     //increment the value in input userId
@@ -92,6 +93,8 @@ function sortTable() {
 
 // event listener to call sortTable function when dropdown selection changes
 sortSelect.addEventListener("change", (e) => {
+     //make the defaul action that belongs to the event will not occur
     e.preventDefault();
+    //call sortTable()
     sortTable();
 });
